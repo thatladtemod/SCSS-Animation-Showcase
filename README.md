@@ -16,13 +16,13 @@ dist/
   ├── assets/           # Images and other assets
   ├── css/              # Compiled CSS output
   ├── js/               # JavaScript files
-  ├── scss/             # SCSS source files
-      ├── _variables.scss
-      ├── _mixins.scss
-      ├── _animations.scss
-      ├── _components.scss
-      └── main.scss
   └── index.html        # Main HTML file
+├── scss/             # SCSS source files
+    ├── _variables.scss
+    ├── _mixins.scss
+    ├── _animations.scss
+    ├── _components.scss
+    └── main.scss
 README.md
 ```
 
