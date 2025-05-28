@@ -17,3 +17,12 @@ $margin: 1rem;
 // Animation
 $transition-duration: 0.3s;
 $animation-speed: 1s;
+
+$dark-theme: (
+    background: #1f1f1f,
+    card: #2b2b2b,
+    text: #eaeaea,
+    muted: #888,
+    primary: #a78bfa,
+    secondary: #fb6f92
+);

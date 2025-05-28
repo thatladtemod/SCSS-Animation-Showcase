@@ -2,3 +2,42 @@
 @import 'mixins';
 @import 'animations';
 @import 'components';
+
+// === DARK THEME ===
+.btn-toggle {
+    background-color: map-get($dark-theme, card);
+    color: map-get($dark-theme, text);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: $padding;
+    max-width: 300px;
+    margin: $margin auto;
+    text-align: center;
+    @include transition(box-shadow, transform);
+
+    &:hover {
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        transform: translateY(-4px);
+    }
+
+    // === BUTTON ===
+    .btn {
+        padding: 0.75rem 1.5rem;
+        background-color: map-get($dark-theme, primary);
+        color: map-get($dark-theme, background);
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        @include transition(background-color, transform);
+
+        &:hover {
+            background-color: darken(map-get($dark-theme, primary), 10%);
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}

@@ -211,4 +211,37 @@ body footer {
 }
 .card .btn-glow:hover {
   box-shadow: 0 0 12px #ff6ec7, 0 0 24px #ffa1db;
+}
+
+.btn-toggle {
+  background-color: #2b2b2b;
+  color: #eaeaea;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 300px;
+  margin: 1rem auto;
+  text-align: center;
+  transition: box-shadow, transform 0.3s ease-in-out;
+}
+.btn-toggle:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+.btn-toggle .btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #a78bfa;
+  color: #1f1f1f;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color, transform 0.3s ease-in-out;
+}
+.btn-toggle .btn:hover {
+  background-color: #825af8;
+  transform: translateY(-2px);
+}
+.btn-toggle .btn:active {
+  transform: scale(0.98);
 }/*# sourceMappingURL=main.css.map */
