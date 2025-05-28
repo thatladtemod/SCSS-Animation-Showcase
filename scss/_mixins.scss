@@ -30,3 +30,9 @@
 @mixin transition($props...) {
     transition: $props $transition-duration ease-in-out;
 }
+
+// Keyframe animation generator (optional)
+@mixin keyframe($name) {
+    @keyframes #{$name} {
+        @content;
+    } }
