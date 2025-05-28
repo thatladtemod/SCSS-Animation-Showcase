@@ -172,8 +172,11 @@ body footer {
   animation: pulse 1.5s infinite ease-in-out;
 }
 .card .img-zoom-wrapper {
+  width: 150px;
+  height: 150px;
+  text-align: center;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 .card .img-zoom-wrapper img {
   width: 100%;
@@ -181,4 +184,31 @@ body footer {
 }
 .card .img-zoom-wrapper:hover img {
   transform: scale(1.1);
+}
+.card .btn-gradient {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background: linear-gradient(45deg, #7b61ff, #ff6ec7);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-size: 200%;
+  transition: background-position 0.3s ease-in-out;
+}
+.card .btn-gradient:hover {
+  background-position: right center;
+}
+.card .btn-glow {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff6ec7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card .btn-glow:hover {
+  box-shadow: 0 0 12px #ff6ec7, 0 0 24px #ffa1db;
 }/*# sourceMappingURL=main.css.map */

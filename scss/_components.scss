@@ -138,8 +138,11 @@ body {
 
     // === IMAGE ZOOM ===
     .img-zoom-wrapper {
+        width: 150px;
+        height: 150px;
+        text-align: center;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 50%;
 
         img {
             width: 100%;
@@ -148,6 +151,39 @@ body {
 
         &:hover img {
             transform: scale(1.1);
+        }
+    }
+
+    // === GRADIENT SHIFT ===
+    .btn-gradient {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        color: white;
+        background: linear-gradient(45deg, $primary, $secondary);
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background-size: 200%;
+        @include transition(background-position);
+
+        &:hover {
+            background-position: right center;
+        }
+    }
+
+    // === GLOW EFFECT ===
+    .btn-glow {
+        padding: 0.75rem 1.5rem;
+        background-color: $secondary;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        @include transition(box-shadow);
+
+        &:hover {
+            box-shadow: 0 0 12px $secondary, 0 0 24px lighten($secondary, 10%);
         }
     }
 }
