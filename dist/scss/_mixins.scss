@@ -1,0 +1,32 @@
+// Media query mixin
+@mixin respond($breakpoint) {
+    @if $breakpoint == sm {
+        @media (max-width: 600px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == md {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == lg {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+// Flex center utility
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Smooth transition
+@mixin transition($props...) {
+    transition: $props $transition-duration ease-in-out;
+}
