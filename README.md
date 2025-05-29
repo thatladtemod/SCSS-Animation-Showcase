@@ -56,9 +56,5 @@ README.md
 - Add or modify animations in `dist/scss/_animations.scss`.
 - Update component styles in `dist/scss/_components.scss`.
 
-## License
-
-MIT License
-
 ---
 Created by [thatladtemod](https://github.com/thatladtemod)
